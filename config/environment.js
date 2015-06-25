@@ -16,6 +16,16 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+
+    contentSecurityPolicy: {
+      'default-src': "'self'",
+      'script-src': "'self' 'unsafe-inline' connect.soundcloud.com",
+      'font-src': "'self' ",
+      'connect-src': "'self' api.soundcloud.com",
+      'img-src': "'self'",
+      'style-src': "'self'",
+      'media-src': "'self'"
     }
   };
 
